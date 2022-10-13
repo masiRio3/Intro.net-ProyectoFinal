@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProyectoFinal.Models;
+using ProyectoFinal.Rules;
 using System.Diagnostics;
 
 namespace ProyectoFinal.Controllers
@@ -18,7 +19,20 @@ namespace ProyectoFinal.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Suerte()
+        {
+            var rule = new PublicacionRule();
+            var post = rule.GetOnePostRandom();
+
+            return View(post);
+        }
+
+        public IActionResult AcercaDe()
+        {
+            return View();
+        }
+
+        public IActionResult Contacto()
         {
             return View();
         }

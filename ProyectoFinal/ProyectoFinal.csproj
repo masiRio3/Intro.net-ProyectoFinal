@@ -7,17 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\about.html" />
     <Content Remove="wwwroot\assets\favicon.ico" />
     <Content Remove="wwwroot\assets\img\about-bg.jpg" />
     <Content Remove="wwwroot\assets\img\contact-bg.jpg" />
     <Content Remove="wwwroot\assets\img\home-bg.jpg" />
     <Content Remove="wwwroot\assets\img\post-bg.jpg" />
     <Content Remove="wwwroot\assets\img\post-sample-image.jpg" />
-    <Content Remove="wwwroot\contact.html" />
-    <Content Remove="wwwroot\index.html" />
     <Content Remove="wwwroot\js\styles.css" />
-    <Content Remove="wwwroot\post.html" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,18 +21,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\about.html" />
     <None Include="wwwroot\assets\favicon.ico" />
     <None Include="wwwroot\assets\img\about-bg.jpg" />
     <None Include="wwwroot\assets\img\contact-bg.jpg" />
     <None Include="wwwroot\assets\img\home-bg.jpg" />
     <None Include="wwwroot\assets\img\post-bg.jpg" />
     <None Include="wwwroot\assets\img\post-sample-image.jpg" />
-    <None Include="wwwroot\contact.html" />
     <None Include="wwwroot\css\styles.css" />
-    <None Include="wwwroot\index.html" />
     <None Include="wwwroot\js\scripts.js" />
-    <None Include="wwwroot\post.html" />
   </ItemGroup>
 
 </Project>
