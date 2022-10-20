@@ -6,22 +6,27 @@ namespace ProyectoFinal.Rules
 {
     public class PublicacionRule
     {
-        public Publicacion GetOnePostRandom () 
+        private readonly IConfiguration _configuration;
+
+        public PublicacionRule(IConfiguration configuration)
         {
+            _configuration = configuration;
+        }
 
-
-            var connectionString = @"Server=DESKTOP-R987N6G\SQLEXPRESS; Database=BlogDatabase;Trusted_Connection=True";
+        public Publicacion GetOnePostRandom()
+        {
+            var connectionString = _configuration.GetConnectionString("BlogDatabase");
 
             using var connection = new SqlConnection(connectionString);
             {
                 connection.Open();
-                var posts  = connection.Query<Publicacion>("SELECT TOP 1 * FROM Publicacion");
+                var posts = connection.Query<Publicacion>("SELECT TOP 1 * FROM Publicacion");
 
                 return posts.First();
             }
 
 
-        } 
+        }
 
     }
 }

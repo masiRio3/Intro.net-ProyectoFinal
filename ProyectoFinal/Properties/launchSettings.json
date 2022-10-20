@@ -1,21 +1,13 @@
-﻿{
-  "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
-    "iisExpress": {
-      "applicationUrl": "http://localhost:43687",
-      "sslPort": 44365
-    }
-  },
+{
   "profiles": {
     "ProyectoFinal": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7198;http://localhost:5198",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7198;http://localhost:5198"
     },
     "IIS Express": {
       "commandName": "IISExpress",
@@ -23,6 +15,43 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "Express": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7198;http://localhost:5198"
+    },
+    "SSExpressProfile": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_DBINSTANCE": "SqlExpress"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7198;http://localhost:5198"
+    },
+    "LocalDbProfile": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_DBINSTANCE": "LocalDB"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7198;http://localhost:5198"
+    }
+  },
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:43687",
+      "sslPort": 44365
     }
   }
 }

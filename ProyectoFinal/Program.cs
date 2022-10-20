@@ -3,6 +3,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+string dbInstance = string.IsNullOrEmpty(Environment.GetEnvironmentVariable("ASPNETCORE_DBINSTANCE")) ? "SqlExpress" :Environment.GetEnvironmentVariable("ASPNETCORE_DBINSTANCE") ;
+
+builder.Configuration.AddJsonFile($"appsettings.{dbInstance}.json");
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
