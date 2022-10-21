@@ -18,14 +18,15 @@ namespace ProyectoFinal.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var rule = new PublicacionRule(_configuration);
+            var posts = rule.GetPostHome();
+            return View(posts);
         }
 
         public IActionResult Suerte()
         {
             var rule = new PublicacionRule(_configuration);
             var post = rule.GetOnePostRandom();
-
             return View(post);
         }
 
