@@ -4,15 +4,16 @@
     ViewData["imagen"] = Model.Imagen;
     ViewData["TitleHeader"] = Model.Titulo;
     ViewData["SubTitleHeader"] = Model.SubTitulo;
-    ViewData["Creador"] = Model.Creador;
+    ViewData ["Creador"]=Model.Creador;
     ViewData["Creacion"] = Model.Creacion.ToLongDateString();
+    
 }
 
 <article class="mb-4">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
-                @Html.Raw(@Model.Cuerpo)  
+                @Html.Raw(@Model.Cuerpo)
             </div>
         </div>
     </div>
