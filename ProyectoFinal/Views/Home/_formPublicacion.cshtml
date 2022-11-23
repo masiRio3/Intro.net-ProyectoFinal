@@ -2,34 +2,34 @@
 
 <div class="mb-3">
     <label for="Titulo" class="form-label "><strong>Titulo</strong></label>
-    <input asp-for="Titulo" type="text" class="form-control" id="Titulo" aria-describedby="Titulo">
+    <input asp-for="Titulo" type="text" class="form-control" id="Titulo" aria-describedby="Titulo" maxlength="100">
     @Html.ValidationMessageFor(x=>x.Titulo,"",new {@class="text-danger"})
 
 </div>
 
 <div class="mb-3">
     <label for="SubTitulo" class="form-label "><strong>Subtitulo</strong></label>
-    <input asp-for="SubTitulo" type="text" class="form-control" id="Subtitulo" aria-describedby="Subtitulo">
+    <input asp-for="SubTitulo" type="text" class="form-control" id="Subtitulo" aria-describedby="Subtitulo" maxlength="100">
     @Html.ValidationMessageFor(x=>x.SubTitulo,"",new {@class="text-danger"})
 
 </div>
 <div class="mb-3">
     <label for="Creador" class="form-label "><strong>Creador</strong></label>
-    <input asp-for="Creador" type="text" class="form-control" id="Creador" aria-describedby="Creador">
+    <input asp-for="Creador" type="text" class="form-control" id="Creador" aria-describedby="Creador" maxlength="50">
     @Html.ValidationMessageFor(x=>x.Creador,"",new {@class="text-danger"})
 
 </div>
 
 <div class="mb-3">
     <label for="Creacion" class="form-label "><strong>Creacion</strong></label>
-    <input asp-for="Creacion" type="date" class="form-control" id="Creacion" aria-describedby="Creacion">
+    <input asp-for="Creacion" type="date" class="form-control" id="Creacion" aria-describedby="Creacion" >
     @Html.ValidationMessageFor(x=>x.Creacion,"",new {@class="text-danger"})
 
 </div>
 
 <div class="mb-3">
     <label for="Imagen" class="form-label "><strong>Imagen</strong></label>
-    <input asp-for="Imagen" type="text" class="form-control" id="Creacion" aria-describedby="Imagen">
+    <input asp-for="Imagen" type="text" class="form-control" id="Creacion" aria-describedby="Imagen" maxlength="200">
     @Html.ValidationMessageFor(x=>x.Imagen,"",new {@class="text-danger"})
 
 </div>

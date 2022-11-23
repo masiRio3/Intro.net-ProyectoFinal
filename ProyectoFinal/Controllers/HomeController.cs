@@ -26,6 +26,14 @@ namespace ProyectoFinal.Controllers
             return View(posts);
         }
 
+        public IActionResult Publicaciones(int cant= 5, int pagina=0 )
+        {
+            var rule = new PublicacionRule(_configuration);
+            var posts = rule.GetPublicaciones( cant, pagina);
+            return View(posts);
+        }
+
+
         [Authorize]
         public IActionResult Nuevo()
         {
@@ -67,6 +75,7 @@ namespace ProyectoFinal.Controllers
         {
             return View();
         }
+
 
         public IActionResult Contacto()
         {
